@@ -1,5 +1,7 @@
 # TWGehirnIQ
 
+See http://blog.wenzlaff.de/?p=17484
+
 Setzen in einer neuen Datei: .env
 <pre>
 # Projekt ID aus dem Settings Reiter von infura.io
