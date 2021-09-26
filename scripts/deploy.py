@@ -5,11 +5,11 @@ def deploy_gehirn():
 	account = get_account()
 	print("Verwende Account...", account)
 	gehirn = Gehirn.deploy({"from": account}, publish_source=True)
-	iq = gehirn.retrieve()
+	iq = gehirn.getIQ()
 	print("Der IQ=", iq)
-	transaktion = gehirn.store(120, {"from": account})
+	transaktion = gehirn.setIQ(120, {"from": account})
 	transaktion.wait(1)
-	neuer_iq = gehirn.retrieve()
+	neuer_iq = gehirn.getIQ()
 	print("Der neue IQ=", neuer_iq)
 
 def get_account():
